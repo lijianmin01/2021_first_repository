@@ -9,3 +9,6 @@
 
     x = x - △x
 """
+
+## 2020.1.3 16:54
+* https://www.bilibili.com/video/BV1Rv411y7oE?p=12
