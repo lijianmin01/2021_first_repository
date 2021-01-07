@@ -1,0 +1,14 @@
+<!--pages/bind/bind.wxml-->
+<text>数据绑定</text>
+
+<view>数据：{{ message }}</view>
+
+<button bindtap="changeData">点击修改数据</button>
+
+<view>当前用户名：{{name}}</view>
+<view>
+    当前头像：<image src="{{ path }}" style="height:200rpx;width:200rpx"></image>
+</view>
+<!-- <view bindtap="getUserName">获取当前用户名</view> -->
+
+<button open-type="getUserInfo" bindgetuserinfo="xxxx">授权登录</button>

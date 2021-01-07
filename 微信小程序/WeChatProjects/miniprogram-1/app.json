@@ -2,7 +2,8 @@
     "pages": [
         "pages/index/index",
         "pages/home/home",
-        "pages/redirect/redirect"
+        "pages/redirect/redirect",
+        "pages/bind/bind"
     ],
     "window": {
         "navigationBarBackgroundColor": "#000",
@@ -24,5 +25,6 @@
                 "selectedIconPath": "static/tabbar/user.png"
             }
         ]
-    }
+    },
+    "sitemapLocation": "sitemap.json"
 }
