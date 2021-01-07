@@ -1,0 +1,4 @@
+<!--pages/home/home.wxml-->
+<text>pages/home/home.wxml</text>
+
+<a href="www.baidu.com"><text>百度</text></a>

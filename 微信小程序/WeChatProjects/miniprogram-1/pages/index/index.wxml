@@ -1,0 +1,53 @@
+<!--pages/index/index.wxml-->
+
+<view bindtap="clickMe" data-id="12">点我跳转</view>
+
+<navigator url="/pages/redirect/redirect?id=666">跳转到新的页面</navigator>
+
+<view>实例一</view>
+
+<view class="menu-1">
+        <view class="item">
+                <image src="/static/jys.jpg" alt=""></image>
+                <text>姜云升</text>
+        </view>
+        <view class="item">
+                <image src="/static/jys.jpg" alt=""></image>
+                <text>姜云升</text>
+        </view>
+        <view class="item">
+                <image src="/static/jys.jpg" alt=""></image>
+                <text>姜云升</text>
+        </view>
+        <view class="item">
+                <image src="/static/jys.jpg" alt=""></image>
+                <text>姜云升</text>
+        </view>
+</view>
+
+<view>实例三</view>
+<view class="auction">
+        <view class="item">
+                <view class="title">第一场 拍卖</view>
+                <view class="tips">
+                        <view class="status">2020-01-01</view>
+                        <view class="count">111次围观</view>
+                </view>
+
+                <view class="big">
+                        <image src="/static/sd.png"></image>
+                </view>
+                <view class="small">
+                        <image src="/static/sd.png"></image>
+                        <image src="/static/sd.png"></image>
+                        <image src="/static/sd.png"></image>
+                        <image src="/static/sd.png"></image>
+                </view>
+
+        </view>
+</view>
+
+
+
+
+
