@@ -1,0 +1,11 @@
+/* pages/publish/publish.wxss */
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.container image{
+    width: 160rpx;
+    height: 160rpx;
+    padding-right: 10rpx;
+}

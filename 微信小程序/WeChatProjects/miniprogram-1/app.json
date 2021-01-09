@@ -3,7 +3,10 @@
         "pages/index/index",
         "pages/home/home",
         "pages/redirect/redirect",
-        "pages/bind/bind"
+        "pages/bind/bind",
+        "pages/goods/goods",
+        "pages/publish/publish",
+        "pages/register/register"
     ],
     "window": {
         "navigationBarBackgroundColor": "#000",

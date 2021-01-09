@@ -12,3 +12,5 @@
 <!-- <view bindtap="getUserName">获取当前用户名</view> -->
 
 <button open-type="getUserInfo" bindgetuserinfo="xxxx">授权登录</button>
+
+<view bindtap="getLocalPath">请选择当前位置：{{ localPath }}</view>

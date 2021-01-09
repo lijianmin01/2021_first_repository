@@ -7,7 +7,8 @@ Page({
     data: {
         message:"Hello World !",
         name:NaN,
-        path:"/static/touxiang.jpg"
+        path:"/static/touxiang.jpg",
+        localPath:"未知"
     },
 
     /**
@@ -110,6 +111,20 @@ Page({
             fail:function(res){
                 console.log("失败"+res);
             }
+        })
+    },
+    getLocalPath: function () {
+        var that=this;
+        wx.chooseLocation({
+          success: function(res){
+              console.log(res);
+              that.setData({
+                  localPath:res.address,
+              })
+          },
+          fail:function(){
+              console.log("获取位置失败");
+          }
         })
     }
 })

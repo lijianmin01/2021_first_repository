@@ -1,0 +1,12 @@
+/* pages/register/register.wxss */
+
+.num{
+    border:1rpx #000 solid;
+    height: 20rpx;
+    margin-top: 20rpx;
+}
+
+.yzm{
+    display: flex;
+    flex-direction: row;
+}
