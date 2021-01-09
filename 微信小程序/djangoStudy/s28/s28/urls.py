@@ -27,7 +27,17 @@ def index(request):
     ## 返回一个HTML界面
     return render(request,'index.html')
 
+def login(request):
+    # 业务逻辑
+
+    # 返回结果
+    ## 返回一个字符串
+    ## return HttpResponse("index.html")
+    ## 返回一个HTML界面
+    return render(request,'login1.html')
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^index/',index)
+    url(r'^index/',index),
+    url(r'^login/',login),
 ]
