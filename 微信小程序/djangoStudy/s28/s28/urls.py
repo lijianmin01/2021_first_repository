@@ -15,29 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-
-from django.shortcuts import HttpResponse,render
-
-def index(request):
-    # 业务逻辑
-
-    # 返回结果
-    ## 返回一个字符串
-    ## return HttpResponse("index.html")
-    ## 返回一个HTML界面
-    return render(request,'index.html')
-
-def login(request):
-    # 业务逻辑
-
-    # 返回结果
-    ## 返回一个字符串
-    ## return HttpResponse("index.html")
-    ## 返回一个HTML界面
-    return render(request,'login1.html')
+from app01 import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^index/',index),
-    url(r'^login/',login),
+    url(r'^index/',views.index),
+    url(r'^login/',views.login),
 ]
