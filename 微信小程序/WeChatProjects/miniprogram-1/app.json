@@ -6,7 +6,8 @@
         "pages/bind/bind",
         "pages/goods/goods",
         "pages/publish/publish",
-        "pages/register/register"
+        "pages/register/register",
+        "pages/email_register/email_register"
     ],
     "window": {
         "navigationBarBackgroundColor": "#000",

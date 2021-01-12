@@ -25,12 +25,13 @@ Page({
      * 登录
      */
     login:function(){
+        console.log(this.data.phone,this.data.code);
         wx.request({
-          url: 'url',
+          url: 'http://127.0.0.1:8000/api/login/',
           data: {phone:this.data.phone,code:this.data.code},
           method: "POST",
           success:function(res){
-
+            console.log(res);
           },
         //   dataType: dataType,
         //   enableCache: true,
@@ -44,6 +45,31 @@ Page({
         //   fail: (res) => {},
         //   complete: (res) => {},
         })
+    },
+
+    /**
+     * messageCode 发送验证码  邮箱/短信
+     */
+    messageCode: function () {
+        // 手机长度限制
+        if(this.data.phone.length !=11){
+            // 弹窗
+            wx.showToast({
+              title: '手机号长度错误',
+              icon:"none",//loading/success/none
+            })
+            return;
+        }
+
+        // 正则匹配数据格式
+        var reg = /^(1[3|4|5|6|7|8|9])\d(9)$/;
+        if (!reg.test(this.data.phone)){
+            wx.showToast({
+                title: '手机号格式错误',
+                icon:"none",//loading/success/none
+              })
+            return;
+        }
     },
     /**
      * 生命周期函数--监听页面加载

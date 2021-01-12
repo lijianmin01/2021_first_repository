@@ -1,0 +1,14 @@
+<!--pages/email_register/email_register.wxml-->
+<text>通过邮箱注册</text>
+
+<view>你的邮箱是：<text class="inputFontColor">{{email}}</text></view>
+<input class="num" type="text" bindinput="bindTxt" placeholder="请输入邮箱"></input>
+
+<view>验证码：<text class="inputFontColor">{{ code }}</text></view>
+<view class="yzm">
+    <input value="{{code}}" bindinput="bindCode" type="text" class="num" placeholder="请输入验证码" maxlength="4"></input>
+    <button bindtap="messageCode">获取验证码</button>
+</view>
+
+
+<button bindtap="registerByEmail">注册</button>

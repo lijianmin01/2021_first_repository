@@ -4,7 +4,7 @@
         "ignore": []
     },
     "setting": {
-        "urlCheck": true,
+        "urlCheck": false,
         "es6": true,
         "enhance": false,
         "postcss": true,
@@ -92,6 +92,12 @@
                 {
                     "name": "pages/register/register",
                     "pathName": "pages/register/register",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/email_register/email_register",
+                    "pathName": "pages/email_register/email_register",
                     "scene": null
                 }
             ]

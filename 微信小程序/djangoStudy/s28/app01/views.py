@@ -3,14 +3,25 @@ from django.contrib import admin
 
 # redirect 重定向
 from django.shortcuts import HttpResponse,render,redirect
+from app01 import models
 
 def index(request):
     # 业务逻辑
-
     # 返回结果
     ## 返回一个字符串
     ## return HttpResponse("index.html")
     ## 返回一个HTML界面
+
+
+    # orm的测试
+    # from app01 import models
+    # ret = models.User.objects.all()  # QuerySet 对象列表
+
+    # 获取指定名字和密码的数据
+    # # get 方法特点，只能获取一条数据  0 或多条数据对象都会报错
+    # ret = models.User.objects.get(username='root',password='123')
+    # # fitter 可以获取多条数据对象
+    # ret = model.User.objects.fitter(password='123')
     return render(request,'index.html')
 
 def login(request):
@@ -36,7 +47,8 @@ def login(request):
         user = request.POST.get('user')
         pwd = request.POST.get('pwd')
 
-        if user=="root" and pwd=="123":
+        ret = models.User.objects.filter(username=user,password=pwd).count()
+        if ret>0:
             # return redirect("http://www.baidu.com")
             return redirect("/index/")
         else:

@@ -1,0 +1,17 @@
+/* pages/email_register/email_register.wxss */
+
+.num{
+    border:1rpx #000 solid;
+    height: 20rpx;
+    margin-top: 20rpx;
+}
+
+.yzm{
+    display: flex;
+    flex-direction: row;
+}
+
+.inputFontColor{
+    color: crimson;
+    font-size: 36rpx;
+}
