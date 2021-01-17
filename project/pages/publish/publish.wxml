@@ -1,0 +1,5 @@
+<!--pages/publish/publish.wxml-->
+<!--需要显示隐藏的元素-->
+<view><text style="display: {{none}};">页面还未开发哦！</text></view>
+<!--显示或隐藏操作-->
+<button  bindtap="aa">显示或隐藏</button>

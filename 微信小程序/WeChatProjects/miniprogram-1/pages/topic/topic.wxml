@@ -1,0 +1,8 @@
+<!--pages/topic/topic.wxml-->
+
+<view class='conainer'>
+    <view class="item" wx:for="{{ topicList }}" bindtap="backFather" data-xx="{{ item }}">
+        <text>#{{ item.title}}</text>
+        <text>{{item.count}}</text>
+    </view>
+</view>

@@ -1,0 +1,51 @@
+/* pages/user/user.wxss */
+
+.top{
+    display: flex;
+    flex-direction: row;
+    height: 60rpx;
+    flex-direction: row-reverse;
+}
+.smallIcon{
+    height: 50rpx;
+    width: 50rpx;
+    float: right;
+    padding-top:20rpx;
+    padding-right: 30rpx;
+}
+.userIcon{
+    width: 160rpx;
+    height: 160rpx;
+}
+
+.userInformation{
+    padding-top: 30rpx;
+    padding-left: 60rpx;
+    display: flex;
+    flex-direction: row;
+    justify-self:space-between;
+}
+
+
+.userInformationRight{
+    padding-top: 30rpx;
+    display: flex;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;  
+    text-align: center；
+}
+
+.userName{
+    font-size: 46rpx;
+}
+
+.userWords{
+    font-size: 20rpx;
+}
+
+.mid{
+    border: solid #123 2rpx;
+}
+

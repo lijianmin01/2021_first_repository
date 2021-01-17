@@ -7,7 +7,11 @@
         "pages/goods/goods",
         "pages/publish/publish",
         "pages/register/register",
-        "pages/email_register/email_register"
+        "pages/email_register/email_register",
+        "pages/topic/topic",
+        "pages/pub/pub",
+        "pages/test/test",
+        "pages/progress/progress"
     ],
     "window": {
         "navigationBarBackgroundColor": "#000",

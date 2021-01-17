@@ -1,0 +1,13 @@
+<!--pages/progress/progress.wxml-->
+
+<progress percent="20"></progress>
+
+<progress percent="30" color="#DC143C"></progress>
+
+<view wx:for="{{imageList}}">
+    <view>{{ item.title }}</view>
+    <progress percent="{{item.precent}}"></progress>
+</view>
+
+<view>点击按钮完成，将图片一的进度条跟新为80%</view>
+<button bindtap="changePercent">点击</button>

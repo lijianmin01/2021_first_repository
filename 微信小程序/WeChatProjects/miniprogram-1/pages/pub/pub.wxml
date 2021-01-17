@@ -1,0 +1,3 @@
+<!--pages/pub/pub.wxml-->
+
+<view bindtap="choiceTopic">请选择话题:{{topicInfo}}</view>
