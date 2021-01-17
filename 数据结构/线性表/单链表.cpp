@@ -149,6 +149,26 @@ void CreateListTail(LinkList *L,int n){
     
 }
 
+/* 单链表的整表删除
+    - 声明结点p和q
+    - 将第一个结点赋值给p 下一个结点赋值给q
+    - 循环执行释放p和 将q赋值给p 的操作
+*/
+
+Status ClearList(LinkList *L){
+    LinkList p,q;
+
+    p = (*L)->Next;
+
+    while (p)
+    {
+        q = p->Next;
+        free(p);
+        p=q;
+    }
+    (*L)->Next=NULL;
+}
+
 int main(void){
 
     return 0;
