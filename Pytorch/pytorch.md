@@ -16,3 +16,6 @@
 ## 2020.1.4 21:54
 * 学习了 切片与索引跟tensor 的维度变换
 * https://www.bilibili.com/video/BV1Rv411y7oE?p=18
+
+## 2020.1.17 22:34
+* next:https://www.bilibili.com/video/BV1Rv411y7oE?p=21
