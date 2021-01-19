@@ -6,7 +6,7 @@ typedef struct CLinkList
     int data;
     struct CLinkList* next;
     
-}node;
+}node,LinkList[20];
 
 
 /*初始化循环链表*/
@@ -144,4 +144,24 @@ int ds_search(node *pNode,int elem){
     }else{
         return i;
     }
+}
+
+/*用快慢指针的方式判断链表是否有环*/
+int HasLoop2(LinkList L){
+    int step1 = 1;
+    int step2 = 2;
+    LinkList p = L;
+    LinkList q = L; 
+    while(p!=NULL && q!=NULL && q->next!=NULL){
+        p = p->next;
+        if(q->next!=NULL){
+            q = q->next->next;
+        }
+        printf("p:%d q:%d\n",p->data,q->data);
+
+        if(p==q){
+            return 1;
+        }
+    }
+    return 0;
 }
