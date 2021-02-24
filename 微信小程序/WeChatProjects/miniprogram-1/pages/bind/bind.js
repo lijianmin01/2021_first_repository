@@ -5,10 +5,10 @@ Page({
      * 页面的初始数据
      */
     data: {
-        message:"Hello World !",
-        name:NaN,
-        path:"/static/touxiang.jpg",
-        localPath:"未知"
+        message: "Hello World !",
+        name: NaN,
+        path: "/static/touxiang.jpg",
+        localPath: "未知"
     },
 
     /**
@@ -70,61 +70,61 @@ Page({
     /**
      * 点击修改数据
      */
-    changeData: function(){
+    changeData: function () {
         // 获取数据
         console.log(this.data.message);
 
         // 修改数据（错误，只修改后端）
         //this.data.message = "Hello New World !";
 
-        this.setData({ message:"Hello New World !"});
+        this.setData({message: "Hello New World !"});
     },
 
-    getUserName: function(){
+    getUserName: function () {
         // wx.openSetting({});
         //获取用户名
         wx.getUserInfo({
             // 调用成功
-            success:function(res){
+            success: function (res) {
                 console.log(res);
             },
             // 失败
-            fail:function(res){
+            fail: function (res) {
                 console.log(res);
             }
         })
     },
     // 方法二 获取用户信息
-    xxxx: function(){
+    xxxx: function () {
         var that = this;
         //获取用户名
         wx.getUserInfo({
             // 调用成功
-            success:function(res){
+            success: function (res) {
                 console.log(res);
                 that.setData({
-                    path:res.userInfo.avatarUrl,
-                    name:res.userInfo.nickName
+                    path: res.userInfo.avatarUrl,
+                    name: res.userInfo.nickName
                 })
             },
             // 失败
-            fail:function(res){
-                console.log("失败"+res);
+            fail: function (res) {
+                console.log("失败" + res);
             }
         })
     },
     getLocalPath: function () {
-        var that=this;
+        var that = this;
         wx.chooseLocation({
-          success: function(res){
-              console.log(res);
-              that.setData({
-                  localPath:res.address,
-              })
-          },
-          fail:function(){
-              console.log("获取位置失败");
-          }
+            success: function (res) {
+                console.log(res);
+                that.setData({
+                    localPath: res.address,
+                })
+            },
+            fail: function () {
+                console.log("获取位置失败");
+            }
         })
     }
 })

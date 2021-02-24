@@ -5,22 +5,22 @@ Page({
      * 页面的初始数据
      */
     data: {
-        imgsList:['/static/jys.jpg','/static/sd.png']
+        imgsList: ['/static/jys.jpg', '/static/sd.png']
     },
 
     /**
      *  上传图片
      */
-    upLoadImage:function() {
-        var that=this;
+    upLoadImage: function () {
+        var that = this;
         wx.chooseImage({
-            count:9,
-            sizeType:['original','compressed'],
-            sourceType:['album','camera'],
-            success:function(res){
+            count: 9,
+            sizeType: ['original', 'compressed'],
+            sourceType: ['album', 'camera'],
+            success: function (res) {
                 that.setData({
                     // imgsList:res.tempFilePaths,
-                    imgsList:that.data.imgsList.concat(res.tempFilePaths),
+                    imgsList: that.data.imgsList.concat(res.tempFilePaths),
                 })
             }
         })

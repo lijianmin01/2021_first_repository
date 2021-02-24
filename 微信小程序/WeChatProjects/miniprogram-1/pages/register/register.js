@@ -5,45 +5,45 @@ Page({
      * 页面的初始数据
      */
     data: {
-        phone:"***",
-        code:NaN,
+        phone: "***",
+        code: NaN,
     },
 
     bindTxt: function (e) {
-      console.log(e);  
-      this.setData({
-          phone:e.detail.value,
-      })
-    },
-    bindCode:function(e) {
+        console.log(e);
         this.setData({
-            code:e.detail.value,
+            phone: e.detail.value,
+        })
+    },
+    bindCode: function (e) {
+        this.setData({
+            code: e.detail.value,
         })
     },
 
     /**
      * 登录
      */
-    login:function(){
-        console.log(this.data.phone,this.data.code);
+    login: function () {
+        console.log(this.data.phone, this.data.code);
         wx.request({
-          url: 'http://127.0.0.1:8000/api/login/',
-          data: {phone:this.data.phone,code:this.data.code},
-          method: "POST",
-          success:function(res){
-            console.log(res);
-          },
-        //   dataType: dataType,
-        //   enableCache: true,
-        //   enableHttp2: true,
-        //   enableQuic: true,
-        //   header: header,
-        //   method: "POST",
-        //   responseType: responseType,
-        //   timeout: 0,
-        //   success: (result) => {},
-        //   fail: (res) => {},
-        //   complete: (res) => {},
+            url: 'http://127.0.0.1:8000/api/login/',
+            data: {phone: this.data.phone, code: this.data.code},
+            method: "POST",
+            success: function (res) {
+                console.log(res);
+            },
+            //   dataType: dataType,
+            //   enableCache: true,
+            //   enableHttp2: true,
+            //   enableQuic: true,
+            //   header: header,
+            //   method: "POST",
+            //   responseType: responseType,
+            //   timeout: 0,
+            //   success: (result) => {},
+            //   fail: (res) => {},
+            //   complete: (res) => {},
         })
     },
 
@@ -52,22 +52,22 @@ Page({
      */
     messageCode: function () {
         // 手机长度限制
-        if(this.data.phone.length !=11){
+        if (this.data.phone.length != 11) {
             // 弹窗
             wx.showToast({
-              title: '手机号长度错误',
-              icon:"none",//loading/success/none
+                title: '手机号长度错误',
+                icon: "none",//loading/success/none
             })
             return;
         }
 
         // 正则匹配数据格式
         var reg = /^(1[3|4|5|6|7|8|9])\d(9)$/;
-        if (!reg.test(this.data.phone)){
+        if (!reg.test(this.data.phone)) {
             wx.showToast({
                 title: '手机号格式错误',
-                icon:"none",//loading/success/none
-              })
+                icon: "none",//loading/success/none
+            })
             return;
         }
     },

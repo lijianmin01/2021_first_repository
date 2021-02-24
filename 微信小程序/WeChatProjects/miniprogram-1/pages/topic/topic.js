@@ -5,16 +5,16 @@ Page({
      * 页面的初始数据
      */
     data: {
-        topicList:[
-            {id:1,title:"春节买不到票",count:300},
-            {id:2,title:"票太少",count:200},
-            {id:3,title:"票价太贵",count:160},
+        topicList: [
+            {id: 1, title: "春节买不到票", count: 300},
+            {id: 2, title: "票太少", count: 200},
+            {id: 3, title: "票价太贵", count: 160},
         ],
     },
     /**
      * 返回上一级路径
      */
-    backFather:function (e) {
+    backFather: function (e) {
         var topicInfo = e.currentTarget.dataset.xx;
 
         // 方一
@@ -30,10 +30,10 @@ Page({
         // 获取所有页面
         var pages = getCurrentPages();
         // 获取之前界面对象
-        var prevPage = pages[pages.length-2];
+        var prevPage = pages[pages.length - 2];
         prevPage.setTopicData(topicInfo);
         wx.navigateBack({
-          delta: 0,
+            delta: 0,
         })
     },
     /**

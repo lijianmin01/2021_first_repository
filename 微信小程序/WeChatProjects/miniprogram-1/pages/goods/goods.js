@@ -5,10 +5,10 @@ Page({
      * 页面的初始数据
      */
     data: {
-        dataList:["苹果","姜云升","Subs","圣代"],
-        userInfo:{
-            name:"alex",
-            age:18
+        dataList: ["苹果", "姜云升", "Subs", "圣代"],
+        userInfo: {
+            name: "alex",
+            age: 18
         }
     },
 

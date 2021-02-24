@@ -1,38 +1,38 @@
 {
-    "pages": [
-        "pages/index/index",
-        "pages/home/home",
-        "pages/redirect/redirect",
-        "pages/bind/bind",
-        "pages/goods/goods",
-        "pages/publish/publish",
-        "pages/register/register",
-        "pages/email_register/email_register",
-        "pages/topic/topic",
-        "pages/pub/pub",
-        "pages/test/test",
-        "pages/progress/progress"
-    ],
-    "window": {
-        "navigationBarBackgroundColor": "#000",
-        "navigationBarTextStyle": "white",
-        "navigationBarTitleText": "Study"
-    },
-    "tabBar": {
-        "list": [
-            {
-                "pagePath": "pages/index/index",
-                "text": "首页",
-                "iconPath": "static/tabbar/zhuye.png",
-                "selectedIconPath": "static/tabbar/zhuye.png"
-            },
-            {
-                "pagePath": "pages/home/home",
-                "text": "我的",
-                "iconPath": "static/tabbar/user.png",
-                "selectedIconPath": "static/tabbar/user.png"
-            }
-        ]
-    },
-    "sitemapLocation": "sitemap.json"
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/redirect/redirect",
+    "pages/bind/bind",
+    "pages/goods/goods",
+    "pages/publish/publish",
+    "pages/register/register",
+    "pages/email_register/email_register",
+    "pages/topic/topic",
+    "pages/pub/pub",
+    "pages/test/test",
+    "pages/progress/progress"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "Study"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tabbar/zhuye.png",
+        "selectedIconPath": "static/tabbar/zhuye.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "我的",
+        "iconPath": "static/tabbar/user.png",
+        "selectedIconPath": "static/tabbar/user.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
 }

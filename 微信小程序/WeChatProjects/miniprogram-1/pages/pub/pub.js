@@ -5,25 +5,25 @@ Page({
      * 页面的初始数据
      */
     data: {
-      topicInfo:"",
-      topicId:null,
+        topicInfo: "",
+        topicId: null,
     },
     /**
      * 选择话题
      */
-    choiceTopic: function(){
+    choiceTopic: function () {
         wx.navigateTo({
-          url: '/pages/topic/topic',
+            url: '/pages/topic/topic',
         })
     },
     /**
      * 内部设置修改topicInfo的方法
      */
-    setTopicData:function(res){
-      this.setData({
-        topicInfo:res.title,
-        topicId:res.id,
-      })
+    setTopicData: function (res) {
+        this.setData({
+            topicInfo: res.title,
+            topicId: res.id,
+        })
     },
 
     /**
