@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>博客详情</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+    <link rel="stylesheet" href="static/css/typo.css">
+    <link rel="stylesheet" href="static/css/animate.css">
+    <link rel="stylesheet" href="static/lib/prismjs/prism.css">
     <link rel="stylesheet" href="static/css/me.css">
 </head>
 <body>
@@ -33,7 +36,7 @@
         </a>
     </nav>
     <!-- 中间部分 -->
-    <div class="m-container-small m-padded-tb-big">
+    <div class="m-container-small m-padded-tb-big animated fadeIn">
         <div class="ui container">
             <div class="ui top attached segment">
                 <div class="ui horizontal link list">
@@ -62,7 +65,7 @@
                 <h2 class="ui centered aligned header">
                     姜云升《成名》歌词
                 </h2>
-                <div id="content" class="m-padded-lr-responsive m-padded-tb-large">
+                <div id="content" class="typo typo-selection m-padded-lr-responsive m-padded-tb-large">
                     <div class="RichContent-inner"><span class="RichText ztext CopyrightRichText-richText" itemprop="text"><p>第一次知道他是在2017地下八英里全国总决赛的直播里，在一众花衣服乱脏辫的rapper里面他显得格外清爽自然。</p><p>人总是视觉的动物，你必须得先注意到外貌然后再去关注内在。</p><p>微博id@三天门下-姜云升，陆陆续续听了他的几首歌，《自白书》、《遇见你》、《毕业典礼》、《患》。在目前市面上出现的说唱歌曲里面，它们并不很出彩，但是感动我的是，他的词真的很走心，是那种，一眼就能看出来的用了心写的，不是“为了我的梦想拼搏”“我得证明自己牛逼”那些套路空话。</p><p>第一次听《毕业典礼》的时候我哭了，也不知道是触碰了哪根神经。“既期待又害怕着明天的你会去哪里，总忍住眼泪委屈自己就这样活下去。”其用词之精准，画面感之强烈，总能让你想到自己曾坚持的、放弃的那些事情。我们每个人都曾是姜云升，为了想做的是执拗过，拼命过，我们也并非每个人都是姜云升，因为并非每个人都有那样的勇气，拿最美好的青春去孤注一掷，来一场坦白无畏的showhand。</p><p>姜云升说过，他要做创造美的人，而不是被市场定义一个“美”，再做东西往里套。这世界上总是先有美，再有审美。这些话对我触动很大，挺影响我的创作的，不过也让我看见这个人心里坚持的东西。</p><p>我总感觉他很像我最喜欢的哈利波特系列里的小天狼星。双眼永远明亮坚韧，勇敢、执拗，为了信仰与所坚持的，可以放弃别人求之不得的，尽管经历了很多看见过很多，但他一直拥有一颗赤子之心，这不是单纯，更像是阅尽千帆后的坚定和淡然。</p><p>我说的可能有点过分哈哈哈，新闻狗就这个文风不好意思，如果你们知道小天狼星是个什么样的人，我就不用加这么多形容词啦。</p><p>总之，姜云升是个年纪轻轻就拥有自己一套思想体系而且旁人不能撼动的人，这样的人，有时候十分危险，有时候十分迷人。</p><p>另外，老姜也非常可爱非常宠粉，三观正，粉他绝对没有错的～</p><p>作品和实力的话，我戴着高度粉丝滤镜的眼镜，给8分吧～（当然我只是爱好黑怕根本不专业啦）然后人格魅力给9.9～这个圈子啊从来不缺好作品，这样纯粹可爱又不乏实力的男rapper，多么珍贵啊～</p><p>因为时间还有地域原因，一直没有亲眼见他一面，非常遗憾，可能，他以后火了就更没有机会看见了吧，想到就很难过。</p><p>最后想对姜云升说，不要太忙啦要注意休息，如果有天坚持不了或者觉得很累的时候，就想想十五岁离开学校时的心情，想想一直挺你的我们。</p><p>姜云升的明天一定会非常非常棒，一定会出现在我们卧室海报上！</p><p>加油，不管前路如何，我们都会在你身后。</p><figure data-size="normal"><noscript><img src="https://pic1.zhimg.com/50/v2-1195bb64ec50f6e60595121d48222959_hd.jpg?source=1940ef5c" data-rawwidth="1280" data-rawheight="959" data-size="normal" class="origin_image zh-lightbox-thumb" width="1280" data-original="https://pic1.zhimg.com/v2-1195bb64ec50f6e60595121d48222959_r.jpg?source=1940ef5c"/></noscript>
                     </figure></span></div>
                 </div>
@@ -247,6 +250,7 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+<script src="./static/lib/prismjs/prism.js"></script>
 <script>
     $('.menu.toggle').click(function (){
         $('.m-item').toggleClass('m-mobile-hide');

@@ -6,6 +6,7 @@
     <title>博客发布</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
     <link rel="stylesheet" href="../static/css/me.css">
+    <link rel="stylesheet" href="../static/lib/editormd/css/editormd.min.css">
 </head>
 <body>
     <!--导航-->
@@ -67,7 +68,34 @@
                 </div>
 
                 <div class="field">
-                    <textarea name="content" id="" cols="30" rows="10" placeholder="博客内容"></textarea>
+                    <div id="md-content" style="z-index: 1 !important;">
+                        <textarea name="content" placeholder="博客内容" style="display: none;">[TOC]
+
+                            #### Disabled options
+                            
+                            - TeX (Based on KaTeX);
+                            - Emoji;
+                            - Task lists;
+                            - HTML tags decode;
+                            - Flowchart and Sequence Diagram;
+                            
+                            #### Editor.md directory
+                            
+                                editor.md/
+                                        lib/
+                                        css/
+                                        scss/
+                                        tests/
+                                        fonts/
+                                        images/
+                                        plugins/
+                                        examples/
+                                        languages/     
+                                        editormd.js
+                                        ...
+                            
+                        </textarea>
+                    </div>
                 </div>
                 <!-- 分类和标签 -->
                 <div class="two fields">
@@ -186,6 +214,7 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+<script src="../static/lib/editormd/editormd.min.js"></script>
 <script>
     $('.menu.toggle').click(function (){
         $('.m-item').toggleClass('m-mobile-hide');
@@ -206,6 +235,27 @@
                 }]
             }
         }
+    });
+
+    /* markdown */
+    var testEditor;
+    $(function() {
+        testEditor = editormd("md-content", {
+            width   : "100%",
+            height  : 640,
+            syncScrolling : "single",
+            path    : "../static/lib/editormd/lib/"
+        });
+        
+        /*
+        // or
+        testEditor = editormd({
+            id      : "test-editormd",
+            width   : "90%",
+            height  : 640,
+            path    : "../lib/"
+        });
+        */
     });
 </script>
 </html>
